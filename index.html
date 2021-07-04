@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/43dcc20e7a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+
+        <!-- navbar -->
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand"style="font-weight:bold;" ref="#">Cooking master</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#"style="font-weight:bold;">Home</a>
+                            <a class="nav-link active" href="#"style="font-weight:bold;">About</a>
+                            <a class="nav-link active" href="#"style="font-weight:bold;">Recipe</a>
+                            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true"style="font-weight:bold;">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- search items -->
+        <section class="container  d-flex justify-content-center">
+            <div class="meal-search-box">
+
+                <input type="text" class="search-control" placeholder="Search For Meal" id="search-input">
+
+                <button type="text" class="search-btn btn" id="search-btn"><i class="fas fa-search" style="color: #fff;"></i></button>
+            </div>
+
+        </section>
+    </header>
+
+    <main class="container">
+        <!-- API result -->
+        <section>
+            <div class="meal-result">
+                <div id="meal">
+
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="meal-details">
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="meal-details-content">
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
